@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-main{
+    background-color: black;
+    color: white;
+}
+
+.main-main h1{
+    font-size: 30px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color:black;
+    gap: 30px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+}
+
+
+.main-img img{
+    width: 400px;
+    height: 300px;
+}
+
+.main-content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.main-content p{
+    text-align: justify;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+}
+
+.desc .education,.skill,.experience div{
+    text-align: left;
+    padding: 0px 30px 30px 30px;
+}
+
+.main-content .ul li{
+    display: inline-block;
+    margin-left: 10%;
+    font-weight: bolder;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main-content .ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.main-content .ul li:hover::after{
+    width: 100% !important;
+    
+}
+
+.main-content ul{
+    padding-top: 10px;
+}
+
+.abc{
+    display: none;
+}
+
+.education{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: left;
+}
+
+.skill ul li{
+    display: block;
+    padding: 5px;
+}
+
+.progress{
+    display: inline-block;
+    height: 10px;
+    font-size: 8px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+
+
+@media screen and (max-width: 845px) {
+    .main-img img{
+        width: 300px;
+        height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 825px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-img img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .main-content{
+        width: 90%;
+    }
+
+    .desc{
+        width: 100%;
+    }
+
+    .ul{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 90% !important;
+        display: flex;
+        justify-content: space-between !important;
+    }
+
+    .ul li{
+        font-size: 16px !important;
+        margin-left: 5px !important;
+        letter-spacing: 0px !important;
+
+        
+    }
+  }

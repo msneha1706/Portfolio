@@ -1,0 +1,119 @@
+.contact-main{
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+}
+
+.contact-logo img{
+    width: 20px;
+    height: 20px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-message{
+    text-align: left;
+    width: 60%;
+    padding:40px 20px 0px 20px;
+}
+
+button{
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-logo{
+    width: 40%;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.msg{
+    width: 60%;
+    height: 35px;
+    background-color: rgba(128, 128, 128, 0.182);
+    color: white;
+    width: 70%;
+    outline: none;
+    border: 1px solid white;
+    padding-left: 10px;
+}
+
+.msg1{
+    width: 60%;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.182);
+    color: white;
+    width: 70%;
+    outline: none;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.email-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-logo{
+        margin: auto;
+        padding-left: 0px;
+        width: 0%;
+    }
+
+    .contact-message{
+        margin: auto;
+        width: 90%;
+    }
+    .msg{
+        height: 30px;
+        background-color: rgba(128, 128, 128, 0.182);
+        color: white;
+        width: 100%;
+    }
+    
+    .msg1{
+        height: 200px;
+        background-color: rgba(128, 128, 128, 0.182);
+        color: white;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    
+  }
+

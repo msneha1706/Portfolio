@@ -1,0 +1,152 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-nav{
+    background-color: black;
+    width: 100%;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.logo{
+    color: white;
+    width: 25%;
+}
+
+.logo p{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.item{
+    width: 75%;
+}
+
+.item ul li{
+    display: inline-block;
+    color: white;
+    margin-left: 10%;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.item ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    background-color: white; 
+    transition: all;
+    transition-duration: .3s;
+    transition-delay: linear;
+    transition-timing-function: .3s;
+}
+
+
+.item ul li:hover::after{
+    width: 100% !important;
+}
+
+.icon{
+    width: 50px;
+    display: none;
+}
+
+.icon img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.item-hide{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.show-nav{
+    max-height: 500px !important;
+}
+
+.item-hide ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.item-hide ul li{
+    width: fit-content;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-hide ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    background-color: white; 
+    transition: all;
+    transition-duration: .3s;
+    transition-delay: linear;
+    transition-timing-function: .3s;
+}
+
+
+.item-hide ul li:hover::after{
+    width: 100% !important;
+    bottom: 0;
+}
+
+
+
+@media screen and (max-width: 845px) {
+    .item ul li{
+        display: inline-block;
+        color: white;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 528px) {
+    .item ul li{
+        visibility:hidden;
+    }
+
+    .icon{
+        display: block;   
+    }
+
+    .icon:hover{
+        cursor: pointer;
+    }
+  }

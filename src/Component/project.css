@@ -1,0 +1,41 @@
+.project{
+    padding-top: 70px;
+    background-color: black;
+    color: white;
+}
+
+.card-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card{
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    text-align: justify;
+    background-color: rgba(128, 128, 128, 0.319);
+}
+
+@media screen and (max-width: 765px) {
+    .card-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 10px;
+        padding: 20px;
+        width: 90%;
+        overflow: hidden;
+        text-align: justify;
+        background-color: rgba(128, 128, 128, 0.319);
+    }
+  }
